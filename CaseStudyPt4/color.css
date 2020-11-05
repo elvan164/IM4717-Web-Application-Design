@@ -1,0 +1,218 @@
+#header { 
+	background-color: #dbb48c;
+	color: #000000;
+	text-align: center;
+	margin: 0;
+	padding-top:5px;
+}
+
+body { background-color: #fcf6c0;
+	color: #330000;
+	font-family: Verdana, Arial, sans-serif;
+}
+
+#nav { text-align: center;
+	float: left;
+	background-color:#e0d0b2;
+	color:#6b5740;
+	text-decoration: none;
+	font-weight:bold;
+	padding:0px 48px 110px 10px;
+	}
+
+#nav a{
+	text-decoration:none;
+}
+#nav a:link {
+	color: #6b5740;
+}
+
+#nav a:visited {
+	color: #998066;
+}
+
+#nav a:hover {
+	color: RED;
+}
+
+#nav ul {
+	list-style-type: none;
+	text-decoration:none;
+}
+
+#footer { background-color: #dbb48c;
+	color: #000000;
+	font-size: small;
+	font-style: italic;
+	text-align: center; 
+	padding-top: 20px;
+	padding-bottom: 20px;
+	clear: both; }
+	
+#footer a:link {
+	color: #6b5740;
+}
+
+#footer a:visited {
+	color: #998066;
+}
+
+#footer a:hover {
+	color: #330000;
+}
+	
+#container { 
+	box-shadow: 5px 5px 5px #422b19;
+	background-color:#e0d0b2; 
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	min-width: 800px;
+	max-width: 800px;
+}
+	
+#content { 
+	padding: 8px 0px 40px 15px;
+	margin-left: 150px;
+	background-color: #f6f4de;
+	color: #201402; 
+	font-size:13px;
+}
+
+img { border: none; }
+
+.roadimage {
+	float: left;
+	padding: 10px 25px 20px 50px;
+	height:130px;
+	width:280px;
+}
+
+#h2{
+	font-weight:bold;
+	color:#331301;
+	font-size:20px;
+	padding: 5px 10px 10px 0px;
+}
+
+#content ul{
+	padding-left:365px;
+	
+}
+
+#MenuContent{ 
+	padding: 8px 20px 15px 15px;
+	margin-left: 150px;
+	background-color: #f6f4de;
+	color: #201402; 
+	font-size:13px;
+}
+
+#MenuTable{
+	padding: 5px 52px 0px 50px;
+	font-size: px;
+}
+
+#MenuTable td{
+	border-right: 1px #f6f4de solid;
+	padding:5px 5px 5px 5px;
+	font-size: 12px;
+	min-width: 50px;
+}
+
+#MenuTable tr:nth-of-type(odd) {
+	background-color: #dbb48c;
+}
+
+#MenuTable td:nth-of-type(odd){
+	font-weight:bold;
+	text-align:center;
+	font-size:14px;
+}
+
+#h3{
+	color:#331301;
+	font-size:12px;
+	padding:5px 15px 0px 0px;
+}
+
+#MusicContent{ 
+	padding: 8px 20px 0px 15px;
+	margin-left: 150px;
+	background-color: #f6f4de;
+	color: #201402; 
+	font-size:13px;
+}
+
+#MusicTable{
+	padding: 5px 135px 0px 115px;
+}
+
+#MusicTable td{ 
+	border-right: 1px #f6f4de solid;
+}
+
+#MusicTable tr:nth-of-type(odd){
+	background-color: #dbb48c;
+	font-weight: bold;
+	font-size:18px;
+}
+
+#MusicTable tr:nth-of-type(even){
+	background-color: #f6f4de;
+}
+
+#MusicTable td:nth-of-type(even){
+	font-size:12px;
+	padding:0px 0px 20px 20px;
+}
+
+#MusicTable img{
+	height:60px;
+	width:60px;
+	padding:10px 10px 0px 10px;
+}
+
+#player {
+	width:250px;
+	height:25px;
+	padding:15px 0px 0px 0px;
+}
+
+#JobsContent { 
+	padding: 8px 20px 15px 15px;
+	margin-left: 150px;
+	background-color: #f6f4de;
+	color: #201402; 
+	font-size:13px;
+}
+
+#JobsTable {
+	padding:10px 0px 10px 0px;
+}
+#JobsTable tbody td:nth-of-type(odd){
+	padding:0px 20px 0px 0px;
+	text-align:right;
+	vertical-align:top;
+	vertical-align:right;
+	
+}
+
+#JobsTable tbody td:nth-of-type(even){
+	text-align:left;
+	vertical-align:left;
+}
+
+#JobsTable tfoot{
+	text-align:left;
+	vertical-align:left;
+}
+
+input[type=number]{
+	width: 80%;
+}
+
+#total {
+	text-align: right;
+	padding: 20px 30px 10px 0px;
+	}

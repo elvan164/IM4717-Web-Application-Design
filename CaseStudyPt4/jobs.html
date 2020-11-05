@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang = "en">
+
+<head>
+
+	<title>JavaJam Coffee House</title>
+	<meta charset = "utf-8">
+	<link rel="stylesheet" href="color.css">
+	
+</head>
+
+<body>
+<div id="container">
+<h1 id="header">
+	<img src="images/head.png" alt="JavaJam"/>
+</h1>
+
+<div id="nav" style="padding:0px 0px 0px 0px;">
+    <ul>
+    <li><a href ="index.html">Home</a></li>
+    <li><a href ="menu.php">Menu</a></li>
+    <li><a href ="music.html">Music</a></li>
+    <li><a href ="jobs.html">Jobs</a></li>
+    <li><a href ="update.php">Price<br>Update</a></li>
+    <li><a href ="report.html">Report</a></li>
+    </ul>
+</div>
+
+
+
+<div id="JobsContent" style="padding-bottom:50px">
+		<div id="h2">
+				Jobs at JavaJam
+        </div>
+        <div id="h3">
+           Want to work at JavaJam? Fill out the form below to start your application. 
+           Required fields are marked with an asterisk *
+        </div>
+
+        <div id="JobsForm">
+            <table id="JobsTable">
+                <tbody>
+                <form method="post" action="show_post.php">
+                    <tr>
+                        <td><label>*Name:</td>
+                        <td><input type="text" id="name" name="name" onChange="nameCheck()" 
+						required></label></td>
+                    </tr>
+                    <tr>
+                        <td><label>*E-mail:</td>
+                        <td><input type="email" id="email" name="email" onChange="emailCheck()"
+						required></label></td>
+                    </tr>
+                    <tr>
+                        <td><label>Start Date:</td>
+                        <td><input type="date" id="date" name="date" onChange="dateCheck()"
+                            ></label></td>
+                    </tr>
+                    <tr>
+                        <td><label>*Experience:</td>
+                        <td><textarea name="exp" id="exp" required></textarea></label></td>
+                    </tr>
+                    <tr>
+                </tbody>
+                <tfoot>
+                        <td colspan="1"><input type="submit" value="Apply Now"></td>
+						<td colspan="1"><input type="reset" value="Clear Fields"></td>
+                </tfoot>
+                    </tr>
+                </form>
+            </table>
+        </div>
+</div>
+
+<div id="footer">
+	<small><i>Copyright &copy; 2014 JavaJam Coffee House <br>
+	<a href="mailto:Elvan@Koh.com"> Elvan@Koh.com </a>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+	function nameCheck(){
+		var name = document.getElementById("name").value;
+		var check = name.search(/^[a-zA-Z\s]+$/);
+		if (check!=0){
+		alert("Please enter a valid name! (no special characters or numbers)");
+		}
+	}
+	
+	function emailCheck(){
+		var email = document.getElementById("email").value;
+		var check = email.search(/^[\w.-]+@([A-Za-z]+\.){1,3}[A-Za-z]{2,3}$/);
+		if (check!=0){
+		alert("Please enter a valid email address!");
+        }
+    }
+        
+    function dateCheck(){
+        var givenDate = document.getElementById("date").value;
+        givenDate = new Date(givenDate);
+        var currentDate = new Date();
+        if (givenDate < currentDate){
+            alert("Please enter a valid date!")
+        }
+    }
+
+
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang = "en">
+
+<head>
+
+	<title>JavaJam Coffee House</title>
+	<meta charset = "utf-8">
+	<link rel="stylesheet" href="color.css">
+	
+</head>
+
+<body>
+<div id="container">
+<h1 id="header">
+	<img src="images/head.png" alt="JavaJam"/>
+</h1>
+
+<div id="nav">
+	<ul>
+	<li><a href ="index.html">Home</a></li>
+	<li><a href ="menu.html">Menu</a></li>
+	<li><a href ="music.html">Music</a></li>
+	<li><a href ="jobs.html">Jobs</a></li>
+	</ul>
+</div>
+
+
+
+<div id="JobsContent">
+		<div id="h2">
+				Jobs at JavaJam
+        </div>
+        <div id="h3">
+           Want to work at JavaJam? Fill out the form below to start your application. 
+           Required fields are marked with an asterisk *
+        </div>
+
+        <div id="JobsForm">
+            <table id="JobsTable">
+                <tbody>
+                <form method="post" action="show_post.php">
+                    <tr>
+                        <td><label>*Name:</td>
+                        <td><input type="text" id="name" name="name" required></label></td>
+                    </tr>
+                    <tr>
+                        <td><label>*E-mail:</td>
+                        <td><input type="email" id="email" name="email" required></label></td>
+                    </tr>
+                    <tr>
+                        <td><label>Start Date:</td>
+                        <td><input type="date" id="date" name="date"></label></td>
+                    </tr>
+                    <tr>
+                        <td><label>*Experience:</td>
+                        <td><textarea name="exp" id="exp" required></textarea></label></td>
+                    </tr>
+                    <tr>
+                </tbody>
+                <tfoot>
+                        <td colspan="1"><input type="submit" value="Apply Now"></td>
+						<td colspan="1"><input type="reset" value="Clear Fields"></td>
+                </tfoot>
+                    </tr>
+                </form>
+            </table>
+        </div>
+</div>
+
+<div id="footer">
+	<small><i>Copyright &copy; 2014 JavaJam Coffee House <br>
+	<a href="mailto:Elvan@Koh.com"> Elvan@Koh.com </a>
+	</div>
+
+</div>
+</body>
+
+</html>
